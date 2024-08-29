@@ -5,8 +5,8 @@ import Navbar from './Navbar';
 function Header() {
   return (
     <header className="Header">
-      <div className="Header-left">
-<Logo className="Header-logo" alt="logo" /> <span className="Header-span">Dimitri KOBASSIAN</span></div>
+      <h1 className="Header-left">
+<Logo className="Header-logo" alt="logo" /> <span className="Header-span">Dimitri KOBASSIAN</span></h1>
 <div className="Header-right"><Navbar /></div>
     </header>
 
