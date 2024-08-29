@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" style="throwIfNamespace:false" version="1.1" viewBox="0 0 1342 1161" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<path fill="currentColor" />
+    <g transform="matrix(.85746 0 0 .90489 99.115 119.36)">
+        <rect x="-115.59" y="-131.91" width="1564.4" height="1282.2" fill="none"/>
+        <g transform="matrix(-1.1662 0 0 1.1051 1595.7 -769.06)">
+            <text x="684.723px" y="1586.97px" font-family="'Harvest'" font-size="1200px">D</text>
+        </g>
+        <g transform="matrix(1.1662 0 0 1.1051 -321.13 -769.06)">
+            <text x="684.723px" y="1586.97px" font-family="'Harvest'" font-size="1200px">K</text>
+        </g>
+        <g transform="matrix(1.1137 0 0 .88097 -1273.9 -614.61)">
+            <rect x="1131.8" y="648.55" width="1236.9" height="1236.9" fill-opacity="0" stroke="#000" stroke-width="81.98px"/>
+        </g>
+    </g>
+</svg>
