@@ -1,0 +1,42 @@
+$font-stack: 'Harvest', sans-serif;
+$text-color: #d3d3d3;
+$logo-color: #6f7f88;
+
+
+
+.Header {
+    display: flex;
+    padding: 0 2vmin;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282c34;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+    &-left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-span {
+        margin-left: 2vmin;
+        font-family: $font-stack;
+        color: $text-color;
+        align-items: center;
+    }
+
+    &-logo {
+        align-items: center;
+        height: 5vmin;
+        pointer-events: none;
+        color: $text-color;
+
+    }
+}

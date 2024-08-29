@@ -1,11 +1,15 @@
 import '../styles/Header.scss';
-import logo from '../assets/logo.svg';
+import { ReactComponent as Logo } from '../assets/logo.svg';
+import Navbar from './Navbar';
 
 function Header() {
   return (
     <header className="Header">
-      <img></img>
+      <div className="Header-left">
+<Logo className="Header-logo" alt="logo" /> <span className="Header-span">Dimitri KOBASSIAN</span></div>
+<div className="Header-right"><Navbar /></div>
     </header>
+
   );
 }
 
