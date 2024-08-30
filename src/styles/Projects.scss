@@ -11,7 +11,22 @@
         text-align: center;
         margin-bottom: 20px;
         color: #d3d3d3;
-        z-index: 1; // Ensure the title is above other elements
+    }
+
+    &-subtitle {
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #d3d3d3;
+    }
+
+    &-description {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #d3d3d3;
     }
 
     &-card {
@@ -58,7 +73,7 @@
             margin: 1rem;
             background-color: #282c34;
             color: #d3d3d3;
-            font-size: 1.5rem;
+            font-size: 1rem;
             font-weight: 700;
             text-transform: uppercase;
             text-align: center;

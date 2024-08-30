@@ -7,44 +7,34 @@ function Projects() {
             <h2 className="projects-title">Projects</h2>
             <div className="projects-card">
                 <div className="projects-card__item">
-                    <h3>Project 1</h3>
-                    <p>Description of Project 1</p>
-                    <a href="#" className="projects-card__button">View More</a>
+                    <h3 className="projects-subtitle">Booki</h3>
+                    <p className="projects-description">Frontend</p>
+                    <a href="#" className="projects-card__button">View More On Github</a>
                 </div>
                 <div className="projects-card__item">
-                    <h3>Project 2</h3>
-                    <p>Description of Project 2</p>
-                    <a href="#" className="projects-card__button">View More</a>
+                    <h3 className="projects-subtitle">Sophie Bluel</h3>
+                    <p className="projects-description">Javascript</p>
+                    <a href="#" className="projects-card__button">View More On Github</a>
                 </div>
                 <div className="projects-card__item">
-                    <h3>Project 3</h3>
-                    <p>Description of Project 3</p>
-                    <a href="#" className="projects-card__button">View More</a>
+                    <h3 className="projects-subtitle">Nina Carducci</h3>
+                    <p className="projects-description">SEO Optimization</p>
+                    <a href="#" className="projects-card__button">View More On Github</a>
                 </div>
                 <div className="projects-card__item">
-                    <h3>Project 4</h3>
-                    <p>Description of Project 4</p>
-                    <a href="#" className="projects-card__button">View More</a>
+                    <h3 className="projects-subtitle">Kasa</h3>
+                    <p className="projects-description">React App</p>
+                    <a href="#" className="projects-card__button">View More On Github</a>
                 </div>
                 <div className="projects-card__item">
-                    <h3>Project 5</h3>
-                    <p>Description of Project 5</p>
-                    <a href="#" className="projects-card__button">View More</a>
+                    <h3 className="projects-subtitle">Mon Vieux grimoire</h3>
+                    <p className="projects-description">Backend</p>
+                    <a href="#" className="projects-card__button">View More On Github</a>
                 </div>
                 <div className="projects-card__item">
-                    <h3>Project 6</h3>
-                    <p>Description of Project 6</p>
-                    <a href="#" className="projects-card__button">View More</a>
-                </div>
-                <div className="projects-card__item">
-                    <h3>Project 7</h3>
-                    <p>Description of Project 7</p>
-                    <a href="#" className="projects-card__button">View More</a>
-                </div>
-                <div className="projects-card__item">
-                    <h3>Project 8</h3>
-                    <p>Description of Project 8</p>
-                    <a href="#" className="projects-card__button">View More</a>
+                    <h3 className="projects-subtitle">Menu Maker</h3>
+                    <p className="projects-description">Project Management</p>
+                    <a href="#" className="projects-card__button">View More On Github</a>
                 </div>
             </div>
         </div>
