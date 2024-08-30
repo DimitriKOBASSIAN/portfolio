@@ -14,7 +14,7 @@ $logo-color: #6f7f88;
     color: white;
 
     &-left {
-        display: flex;
+        display: inline-flex;
         align-items: center;
         justify-content: space-between;
         font-size: 4vmin;
@@ -27,11 +27,13 @@ $logo-color: #6f7f88;
     }
 
     &-span {
-        margin-left: 2vmin;
+        display: inline;
+        padding-left: 2vmin;
         font-family: $font-stack;
         font-weight: 200;
         color: $text-color;
         align-items: center;
+        white-space: nowrap;
     }
 
     &-logo {
@@ -39,6 +41,7 @@ $logo-color: #6f7f88;
         height: 5vmin;
         pointer-events: none;
         color: $text-color;
+        
 
     }
 }
