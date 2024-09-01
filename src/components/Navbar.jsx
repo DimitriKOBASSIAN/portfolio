@@ -8,7 +8,7 @@ function Navbar() {
             <li className="Navbar-list-item">Home</li>
             <li className="Navbar-list-item">About</li>
             <li className="Navbar-list-item">Projects</li>
-            <li className="Navbar-list-item">Contact</li>
+{/*             <li className="Navbar-list-item">Contact</li> */}
         </ul>
         </div>
     )

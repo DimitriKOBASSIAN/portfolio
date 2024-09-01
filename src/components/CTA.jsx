@@ -16,10 +16,10 @@ function CTA() {
     return (
         <div className="cta">
             <h2 className="cta__heading">Web developper based in Paris</h2>
-            <p className="cta__text">After 12 years of working in a worldwide company as a Help Desk coordinator, I felt the need to completely start anew and discover web development. Passionate, curious, determined, I will be a key element of your team. </p>
+            <p className="cta__text">After 12 years as a Help Desk coordinator for a worldwide company, I decided to face new challenges in web development.</p><p className="cta__text"> Passionate, curious, determined, I will be a key element for your team. </p>
             <div className="cta__buttons">
                 <a href="#" className="cta__button" onClick={openModal}>Contact Me</a>
-                <a target="_blank" href="https://www.linkedin.com/in/dimitri-kobassian-53421821/" className="cta__button">See my resume</a>
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dimitri-kobassian-53421821/" className="cta__button">See my resume</a>
             </div>
             <Contact isOpen={isModalOpen} onClose={closeModal} />
         </div>

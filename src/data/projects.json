@@ -3,36 +3,42 @@
         "title": "Booki",
         "image": "Booki.png",
         "description": "Frontend",
+        "technologies": ["HTML", "CSS"] ,
         "link": "https://github.com/DimitriKOBASSIAN/P2"
     },
     {
         "title": "Sophie Bluel",
         "image": "SophieBluel.png",
         "description": "Javascript",
+        "technologies": ["HTML", "CSS", "Javascript"],
         "link": "https://github.com/DimitriKOBASSIAN/P3"
     },
     {
         "title": "Nina Carducci",
         "image": "NinaCarducci.png",
         "description": "SEO Optimization",
+        "technologies": ["Javascript", "SEO"],
         "link": "https://github.com/DimitriKOBASSIAN/P4"
     },
     {
         "title": "Kasa",
         "image": "Kasa.png",
         "description": "React App",
+        "technologies": ["HTML", "CSS", "Javascript", "React"],
         "link": "https://github.com/DimitriKOBASSIAN/P5"
     },
     {
         "title": "Mon Vieux Grimoire",
         "image": "MonVieuxGrimoire.png",
         "description": "Backend",
+        "technologies": ["node.js", "Express", "MongoDB"],
         "link": "https://github.com/DimitriKOBASSIAN/P6"
     },
     {
         "title": "Menu Maker",
         "image": "MenuMaker.png",
-        "description": "Fullstack",
-        "link": "#"
+        "description": "Project Management",
+        "technologies": ["Trello", "Technology watch"],
+        "link": "https://github.com/DimitriKOBASSIAN/P7"
     }
 ]

@@ -28,6 +28,7 @@ function Projects() {
 
     console.log(projects); // Debugging: log the projects array to check the image paths
 
+
     return (
         <div className="projects">
             <h2 className="projects-title">Projects</h2>
@@ -39,6 +40,7 @@ function Projects() {
                         image={project.image}
                         description={project.description}
                         link={project.link}
+                        technologies={project.technologies}
                     />
                 ))}
             </div>

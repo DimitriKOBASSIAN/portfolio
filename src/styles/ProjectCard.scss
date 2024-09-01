@@ -20,3 +20,23 @@
   .projects-card__button:hover {
     background-color: #d3d3d3;
   }
+
+  .projects-technologies {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.projects-technology__button {
+    padding: 0.5rem 1rem;
+    background-color: #282c34;
+    color: white;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.projects-technology__button:hover {
+    background-color: #d3d3d3;
+    color: #282c34
+}
