@@ -10,7 +10,10 @@ function ProjectCard({ title, image, description, link }) {
                 <img className="projects-image" src={image} alt={title} />
             </div>
             <p className="projects-description">{description}</p>
-            <a href={link} target="_blank"className="projects-card__button">View More On Github</a>
+            <div className="projects-card__buttons">
+                <a href={link} target="_blank" className="projects-card__button">Github</a>
+                <a className="projects-card__button">Details</a>
+            </div>
         </div>
     );
 }
