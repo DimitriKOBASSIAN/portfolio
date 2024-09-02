@@ -5,14 +5,18 @@ import '../styles/ProjectModal.scss';
 function ProjectModal({ project, onClose }) {
     if (!project) return null;
 
+    const handleBackgroundClick = (e) => {
+        if (e.target.className === 'modal') {
+            onClose();
+        }
+    };
+
     return (
-        <div className="modal-overlay" onClick={onClose}>
-            <div className="modal-content" onClick={e => e.stopPropagation()}>
-                <button className="modal-close" onClick={onClose}>X</button>
+        <div className="modal" onClick={handleBackgroundClick}>
+            <div className="modal-content">
+                <span className="close" onClick={onClose}>&times;</span>
                 <h2>{project.title}</h2>
-                <img src={project.image} alt={project.title} />
-                <p>{project.description}</p>
-                <a href={project.link} target="_blank" rel="noopener noreferrer">View More On Github</a>
+                <p>{project.detailedDescription}</p>
             </div>
         </div>
     );

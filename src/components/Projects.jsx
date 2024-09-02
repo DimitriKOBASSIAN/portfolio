@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Projects.scss';
 import projectsData from '../data/projects.json';
 import ProjectCard from './ProjectCard';
+import ProjectModal from './ProjectModal';
 
 // Static imports for images
 import Booki from '../assets/Booki.png';
@@ -21,12 +22,20 @@ const imageMap = {
 };
 
 function Projects() {
+
+    const [selectedProject, setSelectedProject] = useState(null);
     const projects = projectsData.map(project => ({
         ...project,
         image: imageMap[project.image] || '', // Use the image map to get the correct image
     }));
 
-    console.log(projects); // Debugging: log the projects array to check the image paths
+    const handleDetailsClick = (project) => {
+        setSelectedProject(project);
+    };
+
+    const handleCloseModal = () => {
+        setSelectedProject(null);
+    };
 
 
     return (
@@ -41,9 +50,11 @@ function Projects() {
                         description={project.description}
                         link={project.link}
                         technologies={project.technologies}
+                        onDetailsClick={() => handleDetailsClick(project)}
                     />
                 ))}
             </div>
+            <ProjectModal project={selectedProject} onClose={handleCloseModal} />
         </div>
     );
 }

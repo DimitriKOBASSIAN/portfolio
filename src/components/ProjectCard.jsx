@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/ProjectCard.scss';
 
-function ProjectCard({ title, image, description, link, technologies }) {
+function ProjectCard({ title, image, description, link, technologies, onDetailsClick }) {
     return (
         <div className="projects-card__item">
             <h3 className="projects-subtitle">{title}</h3>
@@ -16,8 +16,8 @@ function ProjectCard({ title, image, description, link, technologies }) {
                 ))}
             </div>
             <div className="projects-card__buttons">
-                <a href={link} rel="noreferrer" target="_blank" className="projects-card__button">Github</a>
-                <a className="projects-card__button">Details</a>
+                <a href={link} target="_blank" className="projects-card__button">Github</a>
+                <button onClick={onDetailsClick} className="projects-card__button">Details</button>
             </div>
         </div>
     );
@@ -29,6 +29,7 @@ ProjectCard.propTypes = {
     description: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
     technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+    onDetailsClick: PropTypes.func.isRequired,
 };
 
 export default ProjectCard;
