@@ -22,7 +22,6 @@ const imageMap = {
 };
 
 function Projects() {
-
     const [selectedProject, setSelectedProject] = useState(null);
     const projects = projectsData.map(project => ({
         ...project,
@@ -36,7 +35,6 @@ function Projects() {
     const handleCloseModal = () => {
         setSelectedProject(null);
     };
-
 
     return (
         <div className="projects">
@@ -54,7 +52,9 @@ function Projects() {
                     />
                 ))}
             </div>
-            <ProjectModal project={selectedProject} onClose={handleCloseModal} />
+            {selectedProject && (
+                <ProjectModal project={selectedProject} onClose={handleCloseModal} />
+            )}
         </div>
     );
 }
