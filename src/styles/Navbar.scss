@@ -6,10 +6,9 @@ $logo-color: #6f7f88;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #282c34;
     font-family: 'Harvest', sans-serif;
     font-size: 1.5vmin;
-    padding: 1vmin;
+    padding: 0 0 0 4vmin;
     color: white;   
     margin: 0;
     width: 100%;
@@ -17,11 +16,11 @@ $logo-color: #6f7f88;
     &-list {
         display: inline-flex;
         flex-direction: row;
-        padding: 0;
-        background-color: #282c34;
+        padding: 0 0;
         font-family: 'Harvest', sans-serif;
         font-size: 1.5vmin;
         list-style-type: none;
+        margin: 0;
 }
 
     &-list-item {
@@ -34,7 +33,13 @@ $logo-color: #6f7f88;
         transition: ease-in-out 0.2s;
     }
 
+    &-list-item a {
+        color: $text-color;
+        text-decoration: none;
+    }
+
     &-list-item:hover {
-        color: #ffffff;
+        color: $text-color;
+        text-decoration: underline;
     }
 }

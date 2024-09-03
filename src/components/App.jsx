@@ -7,9 +7,13 @@ import Projects from './Projects';
 function App() {
   return (
     <div className="App">
-      <div className="App-header">
+      <div className="App-header" id="home">
         <Header />
+      </div>
+      <div id="cta">
         <CTA />
+      </div>
+      <div id="projects">
         <Projects />
       </div>
     </div>

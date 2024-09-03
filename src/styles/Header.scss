@@ -2,46 +2,43 @@ $font-stack: 'Harvest', sans-serif;
 $text-color: #d3d3d3;
 $logo-color: #6f7f88;
 
-
-
 .Header {
     display: flex;
-    padding: 0 2vmin;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Space between left and right sections */
     background-color: #282c34;
     font-size: calc(10px + 2vmin);
+    position: fixed;
+    top: 0;
     color: white;
+    height: 60px;
+    padding: 0 7vmin; /* Add padding to align with CTA borders */
+    box-sizing: border-box; /* Include padding in width calculation */
+    z-index: 1000; /* Ensure it stays on top of other elements */
 
     &-left {
-        display: inline-flex;
+        display: flex;
         align-items: center;
-        justify-content: space-between;
+        font-family: $font-stack;
         font-size: 4vmin;
     }
     
     &-right {
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 
     &-span {
-        display: inline;
-        padding-left: 2vmin;
+        padding-left: 1vmin;
         font-family: $font-stack;
         font-weight: 200;
         color: $text-color;
-        align-items: center;
         white-space: nowrap;
     }
 
     &-logo {
-        align-items: center;
         height: 5vmin;
         pointer-events: none;
         color: $text-color;
-        
-
     }
 }
