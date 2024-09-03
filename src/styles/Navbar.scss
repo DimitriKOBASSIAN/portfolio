@@ -52,8 +52,8 @@ $logo-color: #6f7f88;
 }
 
 
-/* Media query for very small screens */
-@media (max-width: 430px) {
+/* Media query for  small screens */
+@media (max-width: 780px) {
     .Navbar {
         &-toggle {
             display: block; /* Show the hamburger icon */

@@ -96,7 +96,7 @@
         }
     }
 
-    @media (max-width: 920px) {
+    @media (max-width: 1024px) {
         padding: 1rem;
         text-align: center;
         flex-direction: column;
@@ -109,18 +109,6 @@
         }
     }
 
-    @media (max-width: 767.96px) {
-        padding: 1rem;
-        text-align: center;
-        flex-direction: column;
-    
-        &-card {
-            display: grid;
-            grid-template-columns: 1fr 1fr; // Display 2 cards per row
-            justify-content: center; // Center the grid items
-            gap: 1rem; // Add gap between grid items
-        }
-    }
     
     @media (max-width: 430px) {
         padding: 1rem;
