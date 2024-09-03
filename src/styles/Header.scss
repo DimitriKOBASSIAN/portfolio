@@ -12,6 +12,7 @@ $logo-color: #6f7f88;
     top: 0;
     color: white;
     height: 60px;
+    width: auto; // Ensure the card section takes full width
     padding: 0 7vmin; /* Add padding to align with CTA borders */
     box-sizing: border-box; /* Include padding in width calculation */
     z-index: 1000; /* Ensure it stays on top of other elements */
@@ -43,9 +44,15 @@ $logo-color: #6f7f88;
     }
 }
 
+/* Media query for smaller screens */
+@media (max-width: 920px) {
+    .Header {
+width: 100%;
+    }
+}
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 767.96px) {
     .Header {
         flex-direction: column;
         align-items: flex-start;
