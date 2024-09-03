@@ -17,4 +17,3 @@ function Header() {
 }
 
 export default Header;
-<Logo className="Header-logo" alt="logo" /> 

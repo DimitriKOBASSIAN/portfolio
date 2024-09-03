@@ -42,3 +42,78 @@ $logo-color: #6f7f88;
         color: $text-color;
     }
 }
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .Header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem;
+
+        &-left {
+            width: 100%;
+            justify-content: center;
+        }
+
+        &-right {
+            width: 100%;
+            justify-content: center;
+        }
+
+        &-span {
+            font-size: 1.5rem;
+        }
+
+        &-logo {
+            height: 4vmin;
+        }
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 430px) {
+    .Header {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between; /* Space between left and right sections */
+        background-color: #282c34;
+        font-size: calc(10px + 2vmin);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; /* Ensure it spans the full width */
+        color: white;
+        height: 60px;
+        padding: 0 2vmin; /* Add padding to align with CTA borders */
+        box-sizing: border-box; /* Include padding in width calculation */
+        z-index: 1000; /* Ensure it stays on top of other elements */
+    
+        &-left {
+            display: flex;
+            align-items: center;
+            font-family: $font-stack;
+            font-size: 4vmin;
+        }
+        
+        &-right {
+            display: flex;
+            align-items: center;
+        }
+    
+        &-span {
+            padding-left: 1vmin;
+            font-family: $font-stack;
+            font-weight: 200;
+            color: $text-color;
+            white-space: nowrap;
+        }
+    
+        &-logo {
+            height: 5vmin;
+            pointer-events: none;
+            color: $text-color;
+        }
+    }
+}

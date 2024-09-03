@@ -13,6 +13,13 @@ $logo-color: #6f7f88;
     margin: 0;
     width: 100%;
 
+    &-toggle {
+        display: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
     &-list {
         display: inline-flex;
         flex-direction: row;
@@ -41,5 +48,41 @@ $logo-color: #6f7f88;
     &-list-item:hover {
         color: $text-color;
         text-decoration: underline;
+    }
+}
+
+
+/* Media query for very small screens */
+@media (max-width: 430px) {
+    .Navbar {
+        &-toggle {
+            display: block; /* Show the hamburger icon */
+        }
+
+        &-list {
+            display: none; /* Hide the menu by default */
+            flex-direction: column;
+            width: 100%; /* Ensure the menu takes full width when open */
+            position: absolute; /* Position it absolutely */
+            top: 60px; /* Position it below the header */
+            left: 0; /* Align it to the left */
+            background-color: #282c34; /* Match the background color */
+            padding: 1rem; /* Add padding */
+
+            &.open {
+                display: flex; /* Show the menu when open */
+                border-bottom: 1px solid white; /* Add a border at the bottom */
+            }
+        }
+
+        &-list-item {
+            width: 100%;
+            text-align: left;
+            padding: 0.5rem 0;
+        }
+
+        &-list-item a {
+            font-size: 1rem;
+        }
     }
 }
