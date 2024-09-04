@@ -3,6 +3,7 @@ import Header from './Header';
 import CTA from './CTA';
 import '../styles/App.scss';
 import Projects from './Projects';
+import SkillsTable from './SkillsTable';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       </div>
       <div id="cta">
         <CTA />
+      </div>
+      <div id="skills">
+        <SkillsTable />
       </div>
       <div id="projects">
         <Projects />

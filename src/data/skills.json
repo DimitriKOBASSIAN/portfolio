@@ -1,0 +1,32 @@
+[
+    {
+        "category": "Frontend",
+        "skills": [
+            { "name": "HTML", "rating": 5 },
+            { "name": "CSS", "rating": 4 },
+            { "name": "JavaScript", "rating": 4 },
+            { "name": "React", "rating": 4 }
+        ]
+    },
+    {
+        "category": "Backend",
+        "skills": [
+            { "name": "Node.js", "rating": 3 },
+            { "name": "Express", "rating": 3},
+            { "name": "MongoDB", "rating": 3 }
+        ]
+    },
+    {
+        "category": "Other",
+        "skills": [
+            { "name": "SEO", "rating": 3 },
+            { "name": "Git", "rating": 4 },
+            { "name": "Project Management", "rating": 4 },
+            { "name": "Technology watch", "rating": 4 },
+            { "name": "Video Editing", "rating": 4 },
+            { "name": "Desktop Publishing", "rating": 4 },
+            { "name": "Graphic Design", "rating": 4 },
+            { "name": "UI/UX Design", "rating": 3 }
+        ]
+    }
+]
