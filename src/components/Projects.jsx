@@ -38,7 +38,7 @@ function Projects() {
 
     return (
         <div className="projects">
-            <h2 className="projects-title">Projects</h2>
+            <h2 className="projects-title"> My Projects</h2>
             <div className="projects-card">
                 {projects.map((project, index) => (
                     <ProjectCard

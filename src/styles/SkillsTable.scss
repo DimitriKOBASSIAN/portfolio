@@ -1,6 +1,6 @@
 .SkillsTable {
     margin: 20px 0;
-    text-align: left;
+    text-align: center;
 
     h2 {
         margin-bottom: 10px;
@@ -13,15 +13,15 @@
         margin: 0 auto;
 
         th, td {
-            border: 1px solid #ddd;
+            border: 1px solid #d3d3d3;
             padding: 8px;
             font-weight: 400;
-            font-size: 1.5vmin;
+            font-size: 2vmin;
 
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: #d3d3d3;
             text-align: left;
         }
 
