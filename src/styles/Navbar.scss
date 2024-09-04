@@ -33,8 +33,8 @@ $logo-color: #6f7f88;
     &-list-item {
         padding: 0.5vmin 0.5vmin 0.5vmin 0.5vmin;
         color: $text-color;
-        font-size: 2.5vmin;
         font-weight: 200;
+        font-size: 3vmin;
         text-decoration: none;
         cursor: pointer;
         transition: ease-in-out 0.2s;
@@ -55,6 +55,7 @@ $logo-color: #6f7f88;
 /* Media query for  small screens */
 @media (max-width: 780px) {
     .Navbar {
+        flex-direction: row-reverse;
         &-toggle {
             display: block; /* Show the hamburger icon */
         }
