@@ -1,0 +1,138 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+
+    &-title {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #d3d3d3;
+    }
+
+    &-subtitle {
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #d3d3d3;
+    }
+
+    &-description {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 5px;
+        color: #d3d3d3;
+    }
+
+    &-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; // Display 3 cards per row
+        gap: 20px; // Add gap between cards
+        justify-content: center;
+        align-items: center;
+        background-color: #282c34;
+        color: #d3d3d3;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px;
+        padding: 10px;
+        width: auto; // Ensure the card section takes full width
+        z-index: 0; // Ensure the card section is below the title
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #282c34;
+            color: #d3d3d3;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid #d3d3d3;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            padding: 10px;
+            width: 300px;
+            height: 300px;
+        }
+
+        &__button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin: 1rem;
+            background-color: #282c34;
+            color: #d3d3d3;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid #d3d3d3;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        &__button:hover {
+            background-color: #d3d3d3;
+            color: #282c34;
+        }
+
+        &-image {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        padding: 1rem;
+        text-align: center;
+        flex-direction: column;
+    
+        &-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr; // Display 2 cards per row
+            justify-content: center; // Center the grid items
+            gap: 2rem; // Add gap between grid items
+        }
+    }
+
+    
+    @media (max-width: 430px) {
+        padding: 1rem;
+        text-align: center;
+        flex-direction: column;
+    
+        &-card {
+            display: grid;
+            grid-template-columns: 1fr; // Display 1 card per row
+            justify-content: center; // Center the grid items
+            gap: 1rem; // Add gap between grid items
+        }
+}
+}
+
+.image-container {
+    background-color: white;
+    padding: 5px; 
+    border-radius: 5px; 
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

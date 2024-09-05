@@ -1,0 +1,89 @@
+$font-stack: 'Harvest', sans-serif;
+$text-color: #d3d3d3;
+$logo-color: #6f7f88;
+
+.Navbar {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Harvest', sans-serif;
+    font-size: 1.5vmin;
+    padding: 0 0 0 4vmin;
+    color: white;   
+    margin: 0;
+    width: 100%;
+
+    &-toggle {
+        display: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    &-list {
+        display: inline-flex;
+        flex-direction: row;
+        padding: 0 0;
+        font-family: 'Harvest', sans-serif;
+        font-size: 1.5vmin;
+        list-style-type: none;
+        margin: 0;
+}
+
+    &-list-item {
+        padding: 0.5vmin 0.5vmin 0.5vmin 0.5vmin;
+        color: $text-color;
+        font-weight: 200;
+        font-size: 3vmin;
+        text-decoration: none;
+        cursor: pointer;
+        transition: ease-in-out 0.2s;
+    }
+
+    &-list-item a {
+        color: $text-color;
+        text-decoration: none;
+    }
+
+    &-list-item:hover {
+        color: $text-color;
+        text-decoration: underline;
+    }
+}
+
+
+/* Media query for  small screens */
+@media (max-width: 780px) {
+    .Navbar {
+        flex-direction: row-reverse;
+        &-toggle {
+            display: block; /* Show the hamburger icon */
+        }
+
+        &-list {
+            display: none; /* Hide the menu by default */
+            flex-direction: column;
+            width: 100%; /* Ensure the menu takes full width when open */
+            position: absolute; /* Position it absolutely */
+            top: 60px; /* Position it below the header */
+            left: 0; /* Align it to the left */
+            background-color: #282c34; /* Match the background color */
+            padding: 1rem; /* Add padding */
+
+            &.open {
+                display: flex; /* Show the menu when open */
+                border-bottom: 1px solid white; /* Add a border at the bottom */
+            }
+        }
+
+        &-list-item {
+            width: 100%;
+            text-align: left;
+            padding: 0.5rem 0;
+        }
+
+        &-list-item a {
+            font-size: 1rem;
+        }
+    }
+}
