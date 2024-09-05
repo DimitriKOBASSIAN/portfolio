@@ -26,7 +26,8 @@
             { "name": "Video Editing", "rating": 4 },
             { "name": "Desktop Publishing", "rating": 4 },
             { "name": "Graphic Design", "rating": 4 },
-            { "name": "UI/UX Design", "rating": 3 }
+            { "name": "UI/UX Design", "rating": 3 },
+            { "name": "AI", "rating": 5 }
         ]
     }
 ]
