@@ -22,7 +22,7 @@
 
         th {
             background-color: #d3d3d3;
-            text-align: left;
+            text-align: center;
 
         }
 
@@ -34,6 +34,29 @@
         tr td {
             background-color: #282c34;
             color: #d3d3d3;
+        }
+
+                .skill-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 30px;
+        }
+
+        .progress-bar {
+            width: 20%;
+            height: 10px;
+            background-color: #282c34;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-left: 10px;
+            border: 1px solid #d3d3d3;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background-color: #d3d3d3;
+            border-radius: 5px;
         }
     }
 }
