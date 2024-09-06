@@ -10,11 +10,13 @@ const SkillsTable = () => {
         setSkills(skillsData);
     }, []);
 
-    const renderStars = (rating) => {
-        const totalStars = 5;
-        const filledStars = '★'.repeat(rating);
-        const emptyStars = '☆'.repeat(totalStars - rating);
-        return filledStars + emptyStars;
+    const renderProgressBar = (rating) => {
+        const percentage = (rating / 5) * 100;
+        return (
+            <div className="progress-bar">
+                <div className="progress-bar-fill" style={{ width: `${percentage}%` }}></div>
+            </div>
+        );
     };
 
     return (
@@ -33,8 +35,9 @@ const SkillsTable = () => {
                             <td>{skillCategory.category}</td>
                             <td>
                                 {skillCategory.skills.map((skill, skillIndex) => (
-                                    <div key={skillIndex}>
-                                        {skill.name} {renderStars(skill.rating)}
+                                    <div key={skillIndex} className="skill-item">
+                                        <span>{skill.name}</span>
+                                        {renderProgressBar(skill.rating)}
                                     </div>
                                 ))}
                             </td>
