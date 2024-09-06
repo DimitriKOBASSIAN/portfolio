@@ -9,7 +9,7 @@ function ProjectCard({ title, image, description, link, technologies, onDetailsC
             <div className="image-container">
                 <img className="projects-image" src={image} alt={title} />
             </div>
-            <p className="projects-description">{description}</p>
+            <h4 className="projects-description">{description}</h4>
             <div className="projects-technologies">
                 {technologies.map((tech, index) => (
                     <button key={index} className="projects-technology__button">{tech}</button>
