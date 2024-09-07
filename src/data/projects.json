@@ -36,7 +36,7 @@
         "technologies": ["HTML", "CSS", "Javascript", "React"],
         "link": "https://github.com/DimitriKOBASSIAN/P5",
         "detailImage": "KasaDetail.png",
-        "webLink": "https://dimitrikobassian.github.io/P5/",
+        "webLink": "",
         "detailedDescription": "React project for OpenClassrooms. The goal was to create a responsive website using React. Kasa is a broker for reserving short and long-term homestays."
     },
     {
