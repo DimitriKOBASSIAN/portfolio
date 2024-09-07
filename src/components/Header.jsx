@@ -7,7 +7,7 @@ function Header() {
       <header className="Header">
           <div className="Header-left">
           <Logo className="Header-logo" alt="logo" /> 
-              <span className="Header-span">Dimitri KOBASSIAN</span>
+              <span className="Header-span"><h1>Dimitri KOBASSIAN</h1></span>
           </div>
           <div className="Header-right">
               <Navbar />

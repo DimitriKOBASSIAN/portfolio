@@ -36,7 +36,6 @@
 }
 
 .projectCard-description {
-    margin-top: 1rem;
     color: #d3d3d3;
     font-size: 1.3rem;
 }
@@ -46,4 +45,24 @@
   height: auto;
   margin-top: 20px;
   border-radius: 8px;
+  
+}
+
+.projects-card__item {
+  /* Existing styles */
+
+  .web-link-icon {
+      margin-left: 8px;
+      color: #d3d3d3;
+      font-size: 0.8em;
+      vertical-align: middle;
+  }
+
+  .web-link-icon:hover {
+      color: #727272;
+  }
+}
+
+.image-container {
+  height: 60px;
 }

@@ -47,6 +47,7 @@ function Projects() {
                         image={project.image}
                         description={project.description}
                         link={project.link}
+                        webLink={project.webLink}
                         technologies={project.technologies}
                         onDetailsClick={() => handleDetailsClick(project)}
                     />

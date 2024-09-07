@@ -6,6 +6,7 @@
         "description": "Frontend",
         "technologies": ["HTML", "CSS"] ,
         "link": "https://github.com/DimitriKOBASSIAN/P2",
+        "webLink": "https://dimitrikobassian.github.io/P2/",
         "detailedDescription": "Frontend project for OpenClassrooms. The goal was to create a responsive website using HTML and CSS. Booki is a broker for reserving short and long-term homestays. "
     },
     {
@@ -15,6 +16,7 @@
         "technologies": ["HTML", "CSS", "Javascript"],
         "link": "https://github.com/DimitriKOBASSIAN/P3",
         "detailImage": "SophieBluelDetail.png",
+        "webLink": "",
         "detailedDescription": "Javascript project for OpenClassrooms. The goal was to create a responsive website using HTML, CSS and Javascript. Sophie Bluel is an architect, and needed a front connected to the backend using API Routes to manage her website and display her works (pictures and description)."
     },
     {
@@ -24,6 +26,7 @@
         "technologies": ["Javascript", "SEO"],
         "link": "https://github.com/DimitriKOBASSIAN/P4",
         "detailImage": "NinaCarducciDetail.png",
+        "webLink": "https://dimitrikobassian.github.io/P4/",
         "detailedDescription": "SEO project for OpenClassrooms. The goal was to optimize the SEO of a website using Javascript. Nina Carducci is a photographer, and needed to improve her website's visibility on search engines. The project was to analyze the website, and propose a list of improvements to make it more visible on search engines. Minor changes were made on the website to improve its SEO, and some fix were needed in the javascript."
     },
     {
@@ -33,6 +36,7 @@
         "technologies": ["HTML", "CSS", "Javascript", "React"],
         "link": "https://github.com/DimitriKOBASSIAN/P5",
         "detailImage": "KasaDetail.png",
+        "webLink": "https://dimitrikobassian.github.io/P5/",
         "detailedDescription": "React project for OpenClassrooms. The goal was to create a responsive website using React. Kasa is a broker for reserving short and long-term homestays."
     },
     {
@@ -41,6 +45,7 @@
         "description": "Backend",
         "technologies": ["node.js", "Express", "MongoDB"],
         "link": "https://github.com/DimitriKOBASSIAN/P6",
+        "webLink": "",
         "detailImage": "MonVieuxGrimoireDetail.png",
         "detailedDescription": "Backend project for OpenClassrooms. The goal was to create a backend using node.js, Express and MongoDB. Mon Vieux Grimoire is a website where users can share the books they read, rate them, and allow other users to rate them too. The backend was created to manage the website's data, and to allow users to create, read, update and delete their books."
     },
@@ -50,6 +55,7 @@
         "description": "Project Management",
         "technologies": ["Trello", "Technology watch"],
         "link": "https://github.com/DimitriKOBASSIAN/P7",
+        "webLink": "",
         "detailImage": "MenuMakerDetail.png",
         "detailedDescription": "Project Management project for OpenClassrooms. The goal was to create a project management plan for a project. Menu Maker is a website where users can create their own menus, and share them on Deliveroo and Instagram. The project management plan was created to manage the project, and to allow the team to work together on the project."
     }
