@@ -1,11 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/ProjectCard.scss';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
-function ProjectCard({ title, image, description, link, technologies, onDetailsClick }) {
+function ProjectCard({ title, image, description, link, technologies, webLink, onDetailsClick }) {
     return (
         <div className="projects-card__item">
-            <h3 className="projects-subtitle">{title}</h3>
+            <h3 className="projects-subtitle">
+                {title}
+                {webLink && (
+                    <a href={webLink} target="_blank" rel="noopener noreferrer" className="web-link-icon">
+                        <FaExternalLinkAlt />
+                    </a>
+                )}
+            </h3>
             <div className="image-container">
                 <img className="projects-image" src={image} alt={title} />
             </div>
@@ -28,6 +36,7 @@ ProjectCard.propTypes = {
     image: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
+    webLink: PropTypes.string,
     technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
     onDetailsClick: PropTypes.func.isRequired,
 };
