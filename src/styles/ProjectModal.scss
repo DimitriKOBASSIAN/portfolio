@@ -11,9 +11,9 @@
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     animation: fadeIn 0.2s ease-in-out; //
-}
 
-.modal-content {
+
+&-content {
     background-color: #282c34;
     margin: auto;
     padding: 20px;
@@ -24,7 +24,7 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     animation: fadeIn 0.2s ease-in-out; //
 }
-
+}
 .close {
     color: #aaa;
     float: right;
