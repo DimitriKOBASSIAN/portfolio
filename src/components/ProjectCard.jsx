@@ -8,11 +8,6 @@ function ProjectCard({ title, image, description, link, technologies, webLink, o
         <div className="projects-card__item">
             <h3 className="projects-subtitle">
                 {title}
-                {webLink && (
-                    <a href={webLink} target="_blank" rel="noopener noreferrer" className="web-link-icon">
-                        <FaExternalLinkAlt />
-                    </a>
-                )}
             </h3>
             <div className="image-container">
                 <img className="projects-image" src={image} alt={title} />
@@ -26,6 +21,11 @@ function ProjectCard({ title, image, description, link, technologies, webLink, o
             <div className="projects-card__buttons">
                 <a href={link} target="_blank" className="projects-card__button">Github</a>
                 <button onClick={onDetailsClick} className="projects-card__button">Details</button>
+                {webLink && (
+                    <a href={webLink} target="_blank" rel="noopener noreferrer" className="projects-card__button">
+                        <FaExternalLinkAlt />
+                    </a>
+                )}
             </div>
         </div>
     );
